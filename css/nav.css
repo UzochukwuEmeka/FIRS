@@ -1,0 +1,133 @@
+.side-nav.dark {
+    background: #262626;
+  }
+  /* In class .side-nav add padding 20px 10px  and overflow auto */
+  .side-nav {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+    background: var(--white);
+    box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s linear;
+    overflow: auto;
+  }
+  /* Also add this new code line */
+  .side-nav::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
+  .logo {
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .closein {
+    text-decoration: none;
+    color: var(--blue);
+    display: none;
+  }
+  .logo-img.dark {
+    width: 150px;
+  }
+  .logo-img {
+    width: 150px;
+  }
+  
+  /* In class .nav-links add padding-left 0px  and position relative */
+  .nav-links {
+    position: relative;
+    list-style: none;
+    padding-left:0px;
+   
+  }
+  /* In class .nav-links .tablinks add padding 10px 15px */
+  .nav-links .tablinks {
+    padding: 10px 15px;
+    color: var(--gray);
+    cursor: pointer;
+  }
+  
+  /*  In class .tablinks.active  add background-color:var(--blue),  box-shadow , border-radius , height,width and transition ;*/
+  .tablinks.active {
+    color: #fff;
+    background-color: var(--blue);
+    /* text-align: center; */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    height: 47px;
+    width: 100%;
+    transition: 0.5s; 
+  }
+  /* Delete class .tablinks.active .actives */
+  
+  /* .tablinks.active .actives {
+    color: rgb(163, 147, 147);
+    top: 0%;
+  } */
+ 
+  
+  .nav-links .tablinks a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0px px;
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .tablinks.active.dark {
+    background: #f0bd2d;
+  }
+  /* Delete class actives */
+  .actives {
+    /* width: 100%;
+    height: 47px;
+    background-color: var(--blue);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: 0.5s; */
+  }
+  
+  /* .nav-links .tablinks:nth-child(1).active ~ .actives {
+    top: -1%; 
+  }
+  
+  .nav-links .tablinks:nth-child(2).active ~ .actives {
+    top: 11.1%;
+  }
+  
+  .nav-links .tablinks:nth-child(3).active ~ .actives {
+    top: 22.2%;
+  }
+  
+  .nav-links .tablinks:nth-child(4).active ~ .actives {
+    top: 33.3%;
+  }
+  
+  .nav-links .tablinks:nth-child(5).active ~ .actives {
+    top: 44.4%;
+  }
+  
+  .nav-links .tablinks:nth-child(6).active ~ .actives {
+    top: 55.5%;
+  }
+  
+  .nav-links .tablinks:nth-child(7).active ~ .actives {
+    top: 66.6%;
+  }
+  
+  .nav-links .tablinks:nth-child(8).active ~ .actives {
+    top: 77.7%;
+  } */
